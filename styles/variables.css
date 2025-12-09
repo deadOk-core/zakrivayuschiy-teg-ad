@@ -4,6 +4,6 @@
     --main-font: 'Inter';
     --accent-font: 'PressStart2P';
     --main-text-weight: 400;
-    --title-weight: 700;
-    
+    --title-bold-weight: 700;
+    --main-text-color: #000;
 }

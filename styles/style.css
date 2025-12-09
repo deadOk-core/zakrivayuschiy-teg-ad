@@ -13,8 +13,154 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
-  /* font-weight: var(--main-text-weight), 400; */
+  font-family: var(--main-font); 
+  color: var(--main-text-color);
   font-variation-settings: 'wght' var(--main-text-weight);
-  /* font-size: ; */
+  font-size: 18px;
+  margin: 0 auto;
+  max-inline-size: 1440px;
+  padding-inline: 372px;
+}
+
+.header {
+  border: 2px solid var(--main-text-color);
+  padding-block: 128px; /* ЗАМЕНИТЬ НА РАСТЯГИВАЮЩИЙСЯ ПЕРЕМЕННОЙ*/
+  margin-block-end: 100px;
+}
+
+.header-title {
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 100%;
+}
+
+.header-main-title {
+  padding-block-end: 20px;
+  font-size: clamp(3.0625rem, 2.71rem + 1.50vw, 4.0625rem);
+}
+
+.closing-tag-title {
+  font-size: clamp(0.875rem, 0.68rem + 0.85vw, 1.4375rem);
+}
+
+/* КАРТОЧКИ*/
+
+.main {
+  
+}
+
+.card {
+  /* border: 2px solid var(--main-text-color); */
+  margin-block-end: 50px;
+}
+
+.card-title {
+  border: 2px solid var(--main-text-color);
+  font-variation-settings: 'wght' var(--title-bold-weight);
+  line-height: 120%;
+  padding: 3px 10px;
+  /* vertical-align: middle; */
+}
+
+.wrapper-image {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 100%;
+  text-transform: lowercase;
+  mix-blend-mode: hard-light;
+  text-shadow:
+  -1px 0 rgba(255,255,255, 0.5), 
+  0 1px rgba(255,255,255, 0.5), 
+  1px 0 rgba(255,255,255, 0.5), 
+  0 -1px rgba(255,255,255, 0.5);
+}
+
+@supports((text-stroke: 1px rgba(255,255,255, 0.5)) or (-webkit-text-stroke: 1px rgba(255,255,255, 0.5))) {
+  .label {
+    -webkit-text-stroke: 1px rgba(255,255,255, 0.5);
+    text-stroke: 1px rgba(255,255,255, 0.5);
+    text-shadow: none;
+  }
+}
+
+.label-uppercase {
+  text-transform: uppercase;
+}
+
+.car-image {
+  border: 2px solid var(--main-text-color);
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+  aspect-ratio: 1 / 1;
+}
+
+.card-text {
+  padding: 25px;
+  border: 2px solid var(--main-text-color);
+}
+
+.description {
+  padding-block-end: 25px;
+}
+
+.work-done {
+  padding-block-end: 27px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.button {
+  background-color: transparent;
+  padding-block: 0;
+  padding-inline: 0;
+}
+
+.card__icon-button {
+  
+  border: none;
+  padding-inline-end: 12px;
+}
+
+.card__like-button {
+  border: 2px solid var(--main-text-color);
+  padding-block: 6.5px;
+  padding-inline: 35px;
+}
+
+.button__text {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 90%;
+}
+
+/*Сохранить на память*/
+
+
+.save-memory {
+  display: flex;
+  
+  justify-content: center;
+  margin-block-end: 103px;  /*ИЗМЕНИТЬ НАДО БУДЕТ НА АДАПТИВ*/
+  
+}
+
+.save-memory-button {
+  /* justify-content: center; */
+  padding-block: 15px;
+  padding-inline-start: 19px;
+  padding-inline-end: 21px;
 }
