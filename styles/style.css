@@ -1,15 +1,3 @@
-/* Здесь вы напишете основную часть стилей страницы.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-*/
-
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -20,12 +8,8 @@
   margin: 0 auto;
   max-inline-size: 1440px;
   padding-inline: clamp(0px, -130.99px + 34.93vw, 372px);
-
-  background-image: repeating-linear-gradient(
-      0deg,
-      #d3d3d3 0 2px,
-      transparent 2px 4px
-    ),
+  background-image:
+    repeating-linear-gradient(0deg, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(90deg, #d3d3d3 0 2px, transparent 2px 4px),
     repeating-linear-gradient(0deg, #1a1a1a, #e7e7e7);
   background-size: cover;
@@ -55,11 +39,6 @@
 }
 
 /* КАРТОЧКИ*/
-
-/* 
-.main {
-  background-color: var(--main-bg-color);
-} */
 
 .card {
   margin-block-end: 50px;
@@ -99,7 +78,6 @@
   font-variation-settings: "wght" var(--title-bold-weight);
   line-height: 120%;
   padding: 3px 10px;
-  /* vertical-align: middle; */
 }
 
 .wrapper-image {
@@ -116,13 +94,15 @@
   line-height: 100%;
   text-transform: lowercase;
   mix-blend-mode: hard-light;
-  text-shadow: -1px 0 rgba(255, 255, 255, 0.5), 0 1px rgba(255, 255, 255, 0.5),
-    1px 0 rgba(255, 255, 255, 0.5), 0 -1px rgba(255, 255, 255, 0.5);
+  text-shadow: 
+      -1px 0 rgba(255, 255, 255, 0.5),
+      0 1px rgba(255, 255, 255, 0.5),
+      1px 0 rgba(255, 255, 255, 0.5),
+      0 -1px rgba(255, 255, 255, 0.5);
 }
 
 @supports (
-  (text-stroke: 1px rgba(255, 255, 255, 0.5)) or
-    (-webkit-text-stroke: 1px rgba(255, 255, 255, 0.5))
+  (text-stroke: 1px rgba(255, 255, 255, 0.5)) or (-webkit-text-stroke: 1px rgba(255, 255, 255, 0.5))
 ) {
   .label {
     -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
@@ -145,7 +125,6 @@
 }
 
 .like-icon {
-  /* padding-block-start: 9px; */
   width: 100%;
   height: 100%;
 }
@@ -177,10 +156,7 @@
 }
 
 .card__icon-button {
-  /* width: 27px; */
-  /* height: 24px; */
   border: none;
-  /* padding-inline-end: 12px; */
 }
 
 .card__icon-button:focus-visible {
@@ -190,7 +166,6 @@
 .card__like-button {
   border: 2px solid var(--main-text-color);
   padding-block: 6.5px;
-  /* padding-inline: 35px; */
   inline-size: 130px;
 }
 
@@ -199,8 +174,7 @@
 .save-memory {
   display: grid;
   justify-content: center;
-
-  margin-block-end: 103px; /*ИЗМЕНИТЬ НАДО БУДЕТ НА АДАПТИВ*/
+  margin-block-end: 103px;
 }
 
 .save-memory-button {
