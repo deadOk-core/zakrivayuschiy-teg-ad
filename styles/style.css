@@ -171,7 +171,6 @@
 
 .button {
   position: relative;
-  background-color: transparent;
   padding-block: 0;
   padding-inline: 0;
   background-color: var(--main-bg-color);
@@ -228,6 +227,9 @@
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 90%;
+  mix-blend-mode: difference;
+  color: var(--main-bg-color);
+  z-index: 2;
 }
 
 .dialog-input-diskette {
@@ -264,12 +266,6 @@ dialog[open]::backdrop {
   grid-column: 1 / -1;
   line-height: 90%;
   padding-block: 10.5px;
-}
-
-.button__text {
-  mix-blend-mode: difference;
-  color: var(--main-bg-color);
-  z-index: 2;
 }
 
 .card__like-button:focus,
